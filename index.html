@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+  <style>
+    html, body { height: 100%; margin: 0; }
+    #n8n-chat { height: 100vh; }
+  </style>
+</head>
+<body>
+  <div id="n8n-chat"></div>
+  <script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+    createChat({
+      webhookUrl: 'https://nieksytse.app.n8n.cloud/webhook/0aa40842-f4df-4418-b7a2-c16ec928e40d/chat',
+      target: '#n8n-chat',
+      mode: 'fullscreen'
+    });
+  </script>
+</body>
+</html>
