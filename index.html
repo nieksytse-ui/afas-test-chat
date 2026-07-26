@@ -16,7 +16,15 @@
     createChat({
       webhookUrl: 'https://nieksytse.app.n8n.cloud/webhook/0aa40842-f4df-4418-b7a2-c16ec928e40d/chat',
       target: '#n8n-chat',
-      mode: 'fullscreen'
+      mode: 'fullscreen',
+      initialMessages: [
+        'Hoi, ik ben Jonas. Wat is je vraag?'
+      ],
+      i18n: {
+        en: {
+          inputPlaceholder: 'typ hier je vraag...'
+        }
+      }
     });
   </script>
 </body>
